@@ -1,5 +1,6 @@
 body {
 		margin: 0;
+		color: #fff;
 }
 
 .container {
@@ -21,11 +22,11 @@ body {
 }
 
 .inner {
-		background-color: blue;
+		background-color: #f4f4f4;
 }
 
 .wrap {
-		background-color: red;
+		background-color: #fff;
 }
 
 .header {
@@ -43,12 +44,11 @@ body {
 		grid-template-areas: "header" "content" "footer";
 		grid-template-rows: 90px 1fr 70px;
 		grid-template-columns: 1fr;
-		margin: 0;
 }
 
 .content {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1000px 1fr;
-		grid-gap: 10px;
+    grid-template-columns: 1fr 1024px 1fr;
+		grid-gap: 0;
 }
