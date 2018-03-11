@@ -9,9 +9,11 @@ body {
 }
 .header {
 		background-color: #004ef8;
+		grid-column: span 3;
 }
 .footer {
 		background-color: #061731;
+		grid-column: span 3;
 }
 .content {
 		background-color: #fff;
@@ -28,7 +30,7 @@ body {
 .wrap {
 		background-color: #fff;
 }
-
+/*
 .header {
 		grid-area: header;
 }
@@ -38,17 +40,18 @@ body {
 .content {
 		grid-area: content;
 }
-
+*/
 .container {
 		display: grid;
 		grid-template-areas: "header" "content" "footer";
 		grid-template-rows: 90px 1fr 70px;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1024px 1fr;
 }
-
+/*
 .content {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1024px 1fr;
 		grid-gap: 0;
 }
+*/
