@@ -2,7 +2,6 @@ body {
 		margin: 0;
 		color: #fff;
 }
-
 .container {
 		height: 100vh;
 		background-color: #f4f4f4;
@@ -21,12 +20,13 @@ body {
 .header,
 .footer {
 		padding: 20px;
+		display: flex;
+    align-items: center;
+		justify-content: center;
 }
-
 .inner {
 		background-color: #f4f4f4;
 }
-
 .wrap {
 		background-color: #fff;
 }
@@ -47,11 +47,18 @@ body {
 		grid-template-rows: 90px 1fr 70px;
 		grid-template-columns: 1fr 1024px 1fr;
 }
-/*
-.content {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1024px 1fr;
-		grid-gap: 0;
+.main-menu ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 }
-*/
+.main-menu ul li {
+}
+.main-menu ul li a {
+		color: #fff;
+		text-decoration: none;
+		margin: 0 10px;
+}
+.main-menu ul li a:hover {
+		text-decoration: underline;
+}

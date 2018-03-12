@@ -1,10 +1,10 @@
 @media only screen and (max-width: 1024px) {
-		.content {
+		.container {
 		    grid-template-columns: 1fr 700px 1fr;
 		}
 }
 @media only screen and (max-width: 768px) {
-		.content {
+		.container {
 		    grid-template-columns: 10px 1fr 10px;
 		}
 }
