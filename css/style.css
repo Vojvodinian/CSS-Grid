@@ -8,11 +8,11 @@ body {
 }
 .header {
 		background-color: #004ef8;
-		grid-column: span 3;
+		//grid-column: span 3;
 }
 .footer {
 		background-color: #061731;
-		grid-column: span 3;
+		//grid-column: span 3;
 }
 .content {
 		background-color: #fff;
@@ -30,7 +30,7 @@ body {
 .wrap {
 		background-color: #fff;
 }
-/*
+
 .header {
 		grid-area: header;
 }
@@ -40,12 +40,19 @@ body {
 .content {
 		grid-area: content;
 }
-*/
+
 .container {
 		display: grid;
-		grid-template-areas: "header" "content" "footer";
+		grid-template-areas: "header header header" "content content content" "footer footer footer";
 		grid-template-rows: 90px 1fr 70px;
-		grid-template-columns: 1fr 1024px 1fr;
+		grid-template-columns: 1fr 960px 1fr;
+}
+
+.content {
+		grid-row-start:    2;
+		grid-row-end:      3;
+		grid-column-start: 2;
+		grid-column-end:   3;
 }
 .main-menu ul {
 		display: flex;
