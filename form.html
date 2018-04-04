@@ -25,7 +25,47 @@
             </nav>
         </header>
 		<div class="content">
-				
+            <form>
+                <label for="title">Title</label>
+                <select name="title" id="title">
+                    <option value="" selected="selected">Select One</option>
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="miss">Miss</option>
+                    <option value="prof">Prof</option>
+                    <option value="lord">Lord</option>
+                    <option value="countess">Countess</option>
+                    <option value="count">Count</option>
+                    <option value="dame">Dame</option>
+                </select>
+
+                <label for="patientName">Patient name:</label>
+                <input type="text" name="patientName" id="patientName" />
+
+                <label for="emailAddress">Email:</label>
+                <input type="email" name="emailAddress" id="emailAddress" />
+
+                <div>
+                    <label>Male</label><input type="radio" name="gender" id="male" value="male" />
+                    <label>Female</label><input type="radio" name="gender" id="female" value="female" />
+                </div>
+
+                <div class="custom-checkbox">
+                    <input type="checkbox" value="agree" id="agree" name="agree" /> 
+                    <label for="agree">
+                        <i class="state"></i>
+                        <span>I agree to the <a href="javascript:;">terms and conditions</a> and <a href="javascript:;">privacy policy.</a></span>
+                    </label>
+                </div>
+
+                <label for="appointmentDate">Date/Time</label>
+                <input type="datetime-local" name="appointmentDate" id="appointmentDate" />
+
+                <label for="address">Address</label>
+                <textarea name="address" id="address" maxlength="500"></textarea>
+
+                <button>Submit</button>
+            </form>
 		</div>
 		<footer class="footer">
             <span class="copy">© VEGA IT SOURCING</span>

@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	color: #fff;
+	color: #535353;
 }
 .container {
 	height: 100vh;
@@ -31,15 +31,18 @@ body {
 	background-color: #061731;
 	//grid-column: span 3;
 }
-.content {
-	background-color: #fff;
-}
 .header,
 .footer {
 	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.footer span {
+	color: #fff;
+}
+.content {
+	background-color: #fff;
 }
 .inner {
 	background-color: #f4f4f4;
@@ -75,4 +78,11 @@ body {
 
 .event {
 	display: grid;
+	grid-template-columns: repeat(4, 1fr);;
+}
+.event span {
+	color: #2c566d;
+}
+.event h4 {
+	color: #2c566d;
 }
