@@ -26,7 +26,7 @@
         </header>
 		<div class="content">
             <form>
-                <label for="title">Title</label>
+                <label for="title">Title:</label>
                 <select name="title" id="title">
                     <option value="" selected="selected">Select One</option>
                     <option value="mr">Mr</option>
@@ -39,16 +39,20 @@
                     <option value="dame">Dame</option>
                 </select>
 
+                <label>Gender:</label>
+                <div>
+                    <label for="male">Male</label><input type="radio" name="gender" id="male" value="male" />
+                    <label for="female">Female</label><input type="radio" name="gender" id="female" value="female" />
+                </div>
+
                 <label for="patientName">Patient name:</label>
-                <input type="text" name="patientName" id="patientName" />
+                <input type="text" name="patientName" id="patientName" placeholder="Enter name..." class="in-text" />
 
                 <label for="emailAddress">Email:</label>
-                <input type="email" name="emailAddress" id="emailAddress" />
+                <input type="email" name="emailAddress" id="emailAddress" placeholder="Enter email..." class="in-text" />
 
-                <div>
-                    <label>Male</label><input type="radio" name="gender" id="male" value="male" />
-                    <label>Female</label><input type="radio" name="gender" id="female" value="female" />
-                </div>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" maxlength="500" placeholder="Enter address..." class="in-text"></textarea>
 
                 <div class="custom-checkbox">
                     <input type="checkbox" value="agree" id="agree" name="agree" /> 
@@ -58,13 +62,7 @@
                     </label>
                 </div>
 
-                <label for="appointmentDate">Date/Time</label>
-                <input type="datetime-local" name="appointmentDate" id="appointmentDate" />
-
-                <label for="address">Address</label>
-                <textarea name="address" id="address" maxlength="500"></textarea>
-
-                <button>Submit</button>
+                <input type="button" value="Submit" class="btn" />
             </form>
 		</div>
 		<footer class="footer">

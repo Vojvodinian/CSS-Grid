@@ -1,5 +1,6 @@
 body {
 	font-family: Verdana;
+	font-size: 14px;
 	color: #535353;
 	height: 100%;
 	background-color: #f4f4f4;
@@ -27,11 +28,9 @@ body {
 
 .header {
 	background-color: #004ef8;
-	//grid-column: span 3;
 }
 .footer {
 	background-color: #061731;
-	//grid-column: span 3;
 }
 .header,
 .footer {
@@ -77,6 +76,42 @@ body {
 	grid-column-end:   3;
 }
 
+label {
+	font-weight: 700;
+}
+.in-text {
+	font-weight: 300;
+    font-size: 14px;
+    color: #414141;
+    height: 46px;
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+    padding: 0 15px;
+}
+textarea.in-text {
+	height: 100px;
+}
+
+.btn {
+	padding: 0 25px;
+	width: 150px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 25px;	
+    background-color: #004ef8;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    outline: 0;
+    border: 0; 
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: #003ec5;
+}
+
 .gallery {
 	padding: 10px;
 	display: grid;
@@ -110,12 +145,33 @@ body {
 	grid-row: span 2;
 }
 
+form {
+	padding: 20px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: [labels] 150px [controls] 1fr;
+	align-items: center;
+}
+form label {
+	grid-column: labels;
+}
+form select,
+form .in-text,
+form .btn,
+form > div {
+	grid-column: controls;
+}
+form .btn {
+	justify-self: end;
+}
+
 .column-span-3 {
 	grid-column: span 3;
 }
 .row-span-3 {
 	grid-row: span 3;
 }
+
 .events li {
 	display: grid;
 	grid-template-columns: 135px 1fr;
