@@ -165,6 +165,39 @@ form .btn {
 	justify-self: end;
 }
 
+
+.layout header {
+	grid-area: inner-header;
+	background-color: red;
+}
+.layout footer {
+	grid-area: inner-footer;
+	background-color: green;
+}
+nav {
+	grid-area: nav;
+	background-color: blue;
+}
+.timeline {
+	grid-area: timeline;
+	background-color: yellow;
+}
+aside {
+	grid-area: aside;
+	background-color: pink;
+}
+.chat {
+	grid-area: chat;
+	background-color: black;
+}
+.layout {
+	height: 100%;
+	display: grid;
+	grid-template-areas: "inner-header inner-header inner-header inner-header" "nav timeline aside chat" "inner-footer inner-footer inner-footer inner-footer";
+	grid-template-rows: 30px 1fr 40px;
+	grid-template-columns: 1fr 30% 15% 1fr;
+}
+
 .column-span-3 {
 	grid-column: span 3;
 }
