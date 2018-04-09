@@ -174,7 +174,7 @@ form .btn {
 	grid-area: inner-footer;
 	background-color: green;
 }
-nav {
+.layout nav {
 	grid-area: nav;
 	background-color: blue;
 }
@@ -182,7 +182,7 @@ nav {
 	grid-area: timeline;
 	background-color: yellow;
 }
-aside {
+.layout aside {
 	grid-area: aside;
 	background-color: pink;
 }
@@ -284,6 +284,27 @@ aside {
 }
 .player-5 {
 	grid-area: 1 / 5 / 3 / 6;
+}
+
+.outer-grid {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-auto-flow: column;
+	border: 1px solid orange;
+}
+.outer-grid > div {
+	border: 1px solid orange;
+}
+.inner-grid {
+	display: grid; /* subgrid */
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	border: 1px solid red;
+}
+.inner-grid > div {
+	border: 1px solid red;
 }
 
 .red-grid {
