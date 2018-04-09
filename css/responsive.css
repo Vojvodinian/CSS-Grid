@@ -11,4 +11,11 @@
 	.container {
 	    grid-template-columns: 10px 1fr 10px;
 	}
+	.gallery {
+		grid-template-columns: 1fr;
+	}
+	.gallery img {
+		grid-column: span 1 !important;
+		grid-row: span 1 !important;
+	}
 }
