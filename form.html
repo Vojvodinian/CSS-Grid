@@ -43,8 +43,16 @@
 
                 <label>Gender:</label>
                 <div>
-                    <label for="male">Male</label><input type="radio" name="gender" id="male" value="male" />
-                    <label for="female">Female</label><input type="radio" name="gender" id="female" value="female" />
+                    <label class="custom-radio">
+                        Male
+                        <input type="radio" name="gender" id="male" value="male" />
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="custom-radio">
+                        Female
+                        <input type="radio" name="gender" id="female" value="female" />
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
 
                 <label for="patientName">Patient name:</label>
@@ -56,11 +64,11 @@
                 <label for="address">Address:</label>
                 <textarea name="address" id="address" maxlength="500" placeholder="Enter address..." class="in-text"></textarea>
 
-                <div class="custom-checkbox">
-                    <input type="checkbox" value="agree" id="agree" name="agree" /> 
-                    <label for="agree">
-                        <i class="state"></i>
-                        <span>I agree to the <a href="javascript:;">terms and conditions</a> and <a href="javascript:;">privacy policy.</a></span>
+                <div>
+                    <label class="custom-checkbox">
+                        I agree to the <a href="javascript:;">terms and conditions</a> and <a href="javascript:;">privacy policy.</a>
+                        <input type="checkbox" value="agree" id="agree" name="agree" />
+                        <span class="checkmark"></span>
                     </label>
                 </div>
 
