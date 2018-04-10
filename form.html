@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/selectric.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/scripts/jquery.selectric.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -79,5 +83,10 @@
             <span class="copy">© VEGA IT SOURCING</span>
         </footer>
     </div>
+    <script type="text/javascript">
+        $(function() {
+            $('select').selectric();
+        });
+    </script>
 </body>
 </html>

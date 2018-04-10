@@ -223,10 +223,10 @@ form {
 	grid-template-columns: [labels] 150px [controls] 1fr;
 	align-items: center;
 }
-form label {
+form > label {
 	grid-column: labels;
 }
-form select,
+form .selectric-wrapper,
 form .in-text,
 form .btn,
 form > div {

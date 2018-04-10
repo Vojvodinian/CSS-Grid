@@ -21,13 +21,10 @@
 	form {
 		grid-template-columns: 1fr;
 	}
-	form > div {
-		grid-column: span 1;
-	}
-	form label {
+	form > label {
 		grid-column: auto;
 	}
-	form select,
+	form .selectric-wrapper,
 	form .in-text,
 	form .btn,
 	form > div {
