@@ -44,3 +44,8 @@ table {
 * {
 	box-sizing: border-box;
 }
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    font-family: Verdana;
+	font-size: 14px;
+}

@@ -92,6 +92,7 @@ label {
 }
 textarea.in-text {
 	height: 100px;
+	padding: 18px 15px;
 }
 
 .btn {

@@ -24,14 +24,15 @@
 }
 
 .selectric-label {
+  font-family: Verdana;
+  font-size: 14px;
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0 38px 0 1em;
-  font-size: 12px;
   line-height: 38px;
-  color: #2f2f2f;
+  color: #535353;
   height: 38px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -234,4 +235,11 @@
 
 .selectric-items .selectric-group li {
   padding-left: 25px;
+}
+
+.selectric {
+    position: relative;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    background: #fff;
 }
