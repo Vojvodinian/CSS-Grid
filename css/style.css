@@ -240,34 +240,57 @@ form .btn {
 
 .layout header {
 	grid-area: inner-header;
-	background-color: red;
+	background-color: #4a64b0;
 }
 .layout footer {
 	grid-area: inner-footer;
-	background-color: green;
+	background-color: #4a64b0;
 }
 .layout nav {
 	grid-area: nav;
-	background-color: blue;
+	width: 185px;
+	justify-self: end;
+	text-align: right;
+	padding: 5px 0;
+}
+.layout nav ul li a {
+	color: #1d2129;
+	display: block;
+	text-decoration: none;
+	padding: 5px;
 }
 .timeline {
 	grid-area: timeline;
-	background-color: yellow;
+	border-left: 1px solid #d2d2d2;
+	border-right: 1px solid #d2d2d2;
+}
+.timeline div {
+	margin: 10px;
+	padding: 30px;
+	background-color: #fff;
 }
 .layout aside {
 	grid-area: aside;
-	background-color: pink;
 }
 .chat {
 	grid-area: chat;
-	background-color: black;
+	border-left: 1px solid #d2d2d2;
+    width: 50%;
+    text-align: center;
+    padding: 5px 0;
+	justify-self: end;
+}
+.chat div {
+	padding: 5px;
 }
 .layout {
 	height: 100%;
 	display: grid;
 	grid-template-areas: "inner-header inner-header inner-header inner-header" "nav timeline aside chat" "inner-footer inner-footer inner-footer inner-footer";
-	grid-template-rows: 30px 1fr 40px;
+	grid-template-rows: 60px 1fr 40px;
 	grid-template-columns: 1fr 30% 15% 1fr;
+	grid-gap: 10px;
+	background-color: #e8eaee;
 }
 
 .column-span-3 {
