@@ -1,13 +1,18 @@
+:root {
+ 	--white: #fff;
+ 	--blue: #004ef8;
+ 	--grey: #f4f4f4;
+}
 body {
 	font-family: Verdana;
 	font-size: 14px;
 	color: #535353;
 	height: 100%;
-	background-color: #f4f4f4;
+	background-color: var(----grey);
 }
 .container {
 	height: 100vh;
-	background-color: #f4f4f4;
+	background-color: var(----grey);
 }
 
 .main-menu ul {
@@ -27,7 +32,7 @@ body {
 }
 
 .header {
-	background-color: #004ef8;
+	background-color: var(--blue);
 }
 .footer {
 	background-color: #061731;
@@ -43,13 +48,13 @@ body {
 	color: #fff;
 }
 .content {
-	background-color: #fff;
+	background-color: var(--white);
 }
 .inner {
-	background-color: #f4f4f4;
+	background-color: var(----grey);
 }
 .wrap {
-	background-color: #fff;
+	background-color: var(--white);
 }
 
 .header {
@@ -101,7 +106,7 @@ textarea.in-text {
     height: 40px;
     font-size: 14px;
     border-radius: 25px;	
-    background-color: #004ef8;
+    background-color: var(--blue);
     color: #fff;
     text-align: center;
     font-weight: 700;
@@ -241,10 +246,14 @@ form .btn {
 .layout header {
 	grid-area: inner-header;
 	background-color: #4a64b0;
+	color: var(--white);
+	padding: 10px;
 }
 .layout footer {
 	grid-area: inner-footer;
 	background-color: #4a64b0;
+	color: var(--white);
+	padding: 10px;
 }
 .layout nav {
 	grid-area: nav;
@@ -267,7 +276,7 @@ form .btn {
 .timeline div {
 	margin: 10px;
 	padding: 30px;
-	background-color: #fff;
+	background-color: var(--white);
 }
 .layout aside {
 	grid-area: aside;
@@ -275,7 +284,7 @@ form .btn {
 .layout aside .stories {
 	margin: 10px 0;
 	padding: 30px;
-	background-color: #fff;
+	background-color: var(--white);
 }
 .chat {
 	grid-area: chat;
@@ -313,7 +322,7 @@ form .btn {
 	padding: 20px;
 }
 .events .time {
-	border-right: 2px solid #004ef8;
+	border-right: 2px solid var(--blue);
 }
 .court {
 	width: 100%;
@@ -357,7 +366,7 @@ form .btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #fff;
+	background: var(--white);
 	font-weight: 700;
 }
 .player-1 {
