@@ -65,4 +65,14 @@
 	.layout aside .stories {
 		margin: 10px;
 	}
+	.events li {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(auto-fit, 20px 20px 20px 20px);
+	}
+	.row-span-3 {
+		grid-row: span 1;
+	}
+	.events .time {
+		border: none;
+	}
 }
