@@ -6,6 +6,19 @@
 	.players {
 		min-height: 500px;
 	}
+	.layout {
+		grid-template-areas: "inner-header inner-header inner-header" "nav timeline aside" "chat chat chat" "inner-footer inner-footer inner-footer";
+		grid-template-rows: 60px 1fr minmax(50px, 100px) 40px;
+		grid-template-columns: 30% 1fr 20%;
+	}
+	.chat {
+		width: 100%;
+		justify-self: auto;
+		border-left: 0;   
+	}
+	.layout aside .stories {
+		margin: 10px 10px 10px 0;
+	}
 }
 @media only screen and (max-width: 768px) {
 	.container {
@@ -34,5 +47,22 @@
 	form .btn {
 		justify-self: center;
 	}
-
+	.layout {
+		grid-template-areas: "inner-header" "timeline" "nav" "aside" "chat" "inner-footer";
+		grid-template-rows: 60px 1fr minmax(50px, 100px) minmax(50px, 100px) minmax(50px, 100px) 40px;
+		grid-template-columns: 1fr;
+	}
+	.layout nav {
+		grid-area: nav;
+		width: 100%;
+		justify-self: auto;
+		text-align: left;
+		padding: 5px;
+	}
+	.timeline {
+		border: none;
+	}
+	.layout aside .stories {
+		margin: 10px;
+	}
 }

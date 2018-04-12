@@ -272,6 +272,11 @@ form .btn {
 .layout aside {
 	grid-area: aside;
 }
+.layout aside .stories {
+	margin: 10px 0;
+	padding: 30px;
+	background-color: #fff;
+}
 .chat {
 	grid-area: chat;
 	border-left: 1px solid #d2d2d2;
