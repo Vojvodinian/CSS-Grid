@@ -2,77 +2,10 @@
 	.container {
 	    grid-template-columns: 1fr 700px 1fr;
 	}
-	.court,
-	.players {
-		min-height: 500px;
-	}
-	.layout {
-		grid-template-areas: "inner-header inner-header inner-header" "nav timeline aside" "chat chat chat" "inner-footer inner-footer inner-footer";
-		grid-template-rows: 60px 1fr minmax(50px, 100px) 40px;
-		grid-template-columns: 30% 1fr 20%;
-	}
-	.chat {
-		width: 100%;
-		justify-self: auto;
-		border-left: 0;   
-	}
-	.layout aside .stories {
-		margin: 10px 10px 10px 0;
-	}
 }
+
 @media only screen and (max-width: 768px) {
 	.container {
 	    grid-template-columns: 10px 1fr 10px;
-	}
-	.gallery {
-		grid-template-columns: 1fr;
-	}
-	.gallery img {
-		grid-column: span 1 !important;
-		grid-row: span 1 !important;
-	}
-	form {
-		grid-template-columns: 1fr;
-	}
-	form > label {
-		grid-column: auto;
-	}
-	form .selectric-wrapper,
-	form .in-text,
-	form .btn,
-	form > div {
-		grid-column: auto;
-		margin-bottom: 10px;
-	}
-	form .btn {
-		justify-self: center;
-	}
-	.layout {
-		grid-template-areas: "inner-header" "timeline" "nav" "aside" "chat" "inner-footer";
-		grid-template-rows: 60px 1fr minmax(50px, 100px) minmax(50px, 100px) minmax(50px, 100px) 40px;
-		grid-template-columns: 1fr;
-	}
-	.layout nav {
-		grid-area: nav;
-		width: 100%;
-		justify-self: auto;
-		text-align: left;
-		padding: 5px;
-	}
-	.timeline {
-		border: none;
-	}
-	.layout aside .stories {
-		margin: 10px;
-	}
-	.events li {
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(auto-fit, 20px 20px 20px 20px);
-	}
-	.row-span-3 {
-		grid-row: span 1;
-	}
-	.events .time {
-		border: none;
 	}
 }
